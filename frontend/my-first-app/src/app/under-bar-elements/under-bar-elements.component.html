@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row padding-0">
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="elementRowZero else firstElement" src="../assets/img/3A.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="elementRowOne else secondElement" src="../assets/img/3B.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="elementRowTwo else thirdElement" src="../assets/img/3C.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="elementRowThree else fourthElement" src="../assets/img/3D.png">
+    </div>
+  </div>
+</div>
+
+<!--ELSE-->
+<ng-template #firstElement>
+  <img src="../assets/img/3A-off.png">
+</ng-template>
+<ng-template #secondElement>
+  <img src="../assets/img/3B-off.png">
+</ng-template>
+<ng-template #thirdElement>
+  <img src="../assets/img/3C-off.png">
+</ng-template>
+<ng-template #fourthElement>
+  <img src="../assets/img/3D-off.png">
+</ng-template>
+

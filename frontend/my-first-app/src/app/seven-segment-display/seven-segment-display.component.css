@@ -1,0 +1,23 @@
+.padding-0 {
+  padding-left: 0;
+  padding-right: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.padding-1 {
+  padding-top: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.font{
+  color:rgb(51, 143, 51);
+  font-size:13vw;
+  font-family:'Trattatello';
+  font-weight:600;
+}

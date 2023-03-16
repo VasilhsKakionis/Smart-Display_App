@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <div class="row">
+    <!--first bar-->
+    <div class="col-3 col-md-3 col-sm-3 col-xs-3 col-lg-3">
+      <div class="row">
+        <div class="col-4 col-xs-4 col-sm-4	col-md-4 col-lg-4 padding-0">
+          <img src="../assets/img/1A-bar.png" height="100%">
+        </div>
+        <div  class="col-8 col-xs-8 col-sm-8	col-md-8 col-lg-8 padding-0">
+          {{activateFirstBar(barValOne)}}
+          <img *ngIf="barOne[0] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[1] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[2] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[3] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[4] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[5] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[6] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[7] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barOne[8] else singleOff" src="../assets/img/1-single.png">
+        </div>
+      </div>
+    </div>
+    <!--second bar-->
+    <div class="col-3 col-md-3 col-sm-3 col-xs-3 col-lg-3">
+      <div class="row">
+        <div class="col-4 col-xs-4 col-sm-4	col-md-4 col-lg-4 padding-0">
+          <img src="../assets/img/1B-bar.png" height="100%">
+        </div>
+        <div class="col-8 col-xs-8 col-sm-8	col-md-8 col-lg-8 padding-0">
+          {{activateSecondBar(barValTwo)}}
+          <img *ngIf="barTwo[0] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[1] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[2] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[3] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[4] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[5] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[6] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barTwo[7] else redOff" src="../assets/img/1-red.png">
+        </div>
+      </div>
+    </div>
+    <!--third bar-->
+    <div class="col-3 col-md-3 col-sm-3 col-xs-3 col-lg-3">
+      <div class="row">
+        <div class="col-4 col-xs-4 col-sm-4	col-md-4 col-lg-4 padding-0">
+          <img src="../assets/img/1C-bar.png" height="100%">
+        </div>
+        <div class="col-8 col-xs-8 col-sm-8	col-md-8 col-lg-8 padding-0">
+          {{activateThirdBar(barValThree)}}
+          <img *ngIf="barThree[0] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[1] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[2] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[3] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[4] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[5] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[6] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barThree[7] else redOff" src="../assets/img/1-red.png">
+        </div>
+      </div>
+    </div>
+    <!--fourth bar-->
+    <div class="col-3 col-md-3 col-sm-3 col-xs-3 col-lg-3">
+      <div class="row">
+        <div class="col-4 col-xs-4 col-sm-4	col-md-4 col-lg-4 padding-0">
+          <img src="../assets/img/1D-bar.png" height="100%">
+        </div>
+        <div class="col-8 col-xs-8 col-sm-8	col-md-8 col-lg-8 padding-0">
+          {{activateFourthBar(barValFour)}}
+          <img *ngIf="barFour[0] else redOff" src="../assets/img/1-red.png">
+          <img *ngIf="barFour[1] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[2] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[3] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[4] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[5] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[6] else singleOff" src="../assets/img/1-single.png">
+          <img *ngIf="barFour[7] else singleOff" src="../assets/img/1-single.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #singleOff>
+  <img src="../assets/img/1-single-off.png">
+</ng-template>
+
+<ng-template #redOff>
+  <img src='../assets/img/1-red-off1.png'>
+</ng-template>

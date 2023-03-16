@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="lowIND11 else amlostBlack" src="../assets/img/7A.png">
+      <img *ngIf="lowIND21 else amlostBlack" src="../assets/img/8A.png">
+      <img *ngIf="lowIND31 else amlostBlack" src="../assets/img/9A.png">
+      <img *ngIf="lowIND41 else amlostBlack" src="../assets/img/10A.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="lowIND12 else amlostBlack" src="../assets/img/7B.png">
+      <img *ngIf="lowIND22 else amlostBlack" src="../assets/img/8B.png">
+      <img *ngIf="lowIND32 else amlostBlack" src="../assets/img/9B.png">
+      <img *ngIf="lowIND42 else amlostBlack" src="../assets/img/10B.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="lowIND13 else amlostBlack" src="../assets/img/7C.png">
+      <img *ngIf="lowIND23 else amlostBlack" src="../assets/img/8C.png">
+      <img *ngIf="lowIND33 else amlostBlack" src="../assets/img/9C.png">
+      <img *ngIf="lowIND43 else amlostBlack" src="../assets/img/10C.png">
+    </div>
+    <div class="col-3 col-xs-3 col-sm-3	col-md-3	col-lg-3 padding-0">
+      <img *ngIf="lowIND14 else amlostBlack" src="../assets/img/7D.png">
+      <img *ngIf="lowIND24 else amlostBlack" src="../assets/img/8D.png">
+      <img *ngIf="lowIND34 else amlostBlack" src="../assets/img/9D.png">
+      <img *ngIf="lowIND44 else amlostBlack"src="../assets/img/10D.png">
+    </div>
+  </div>
+</div>
+
+<!--ELSE-->
+<ng-template #amlostBlack>
+  <img src="../assets/img/almost_black.png">
+</ng-template>

@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10 col-xs-10 col-sm-10	col-md-10 col-lg-10 padding-0">
+      <div class="row">
+        {{exceedHours()}}
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0"></div>
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0 font">{{hours.charAt(hours.length-5)}}</div>
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0 font">{{hours.charAt(hours.length-4)}}</div>
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0 font">{{hours.charAt(hours.length-3)}}</div>
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0 font">{{hours.charAt(hours.length-2)}}</div>
+        <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-0 font">{{hours.charAt(hours.length-1)}}</div>
+      </div>
+    </div>
+    <div class="col-2 col-xs-2 col-sm-2	col-md-2 col-lg-2 padding-1">
+      <img *ngIf="hourglass else hourglassOff" src="../assets/img/5.png">
+    </div>
+  </div>
+</div>
+
+<ng-template #hourglassOff>
+  <img src="../assets/img/5-off.png">
+</ng-template>
